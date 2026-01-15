@@ -37,7 +37,7 @@ export function PortfolioContact() {
 
                   <div className="space-y-4">
                     <a
-                      href={`mailto:${PROFILE_INFO.email}`}
+                      href={`https://mail.google.com/mail/?view=cm&to=${PROFILE_INFO.email}&su=Hello%20from%20Portfolio&body=Hi%20Priyanka%2C%0D%0A%0D%0A`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group flex items-start gap-4 p-4 bg-muted/50 rounded-xl hover:bg-primary/10 transition-all duration-300"
@@ -132,8 +132,12 @@ export function PortfolioContact() {
                     Currently exploring new opportunities in API architecture and cloud infrastructure roles.
                   </p>
                   <Button asChild className="w-full">
-                    <a href={`mailto:${PROFILE_INFO.email}?subject=Job Opportunity`}>
-                      <Mail className="mr-2 h-4 w-4" />
+                    <a
+                      href={`https://mail.google.com/mail/?view=cm&to=${PROFILE_INFO.email}&su=Job%20Opportunity&body=Hi%20Priyanka%2C%0D%0A%0D%0A`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="..."
+                    >
                       Get in Touch
                     </a>
                   </Button>

@@ -10,8 +10,8 @@ export const PROFILE_INFO = {
   phone: "+971 521501603",
   email: "mansuriyapriyanka@gmail.com",
   visa: "UAE Spouse Visa",
-  linkedIn: "https://www.linkedin.com/in/priyanka-mansuriya",
-  github: "https://github.com/priyanka-mansuriya",
+  linkedIn: "https://www.linkedin.com/in/priyankamansuriya",
+  github: "https://github.com/priyanka28-05",
 } as const
 
 export const PROFESSIONAL_SUMMARY = `I don't just write code; I secure the flow of data. Specializing in Java Spring Boot, Apigee, and High-Scale Microservices.`
@@ -166,7 +166,7 @@ export const PROJECTS_DATA = [
     year: "2024",
     tech: ["Java", "Spring Boot", "RESTful APIs"],
     description: "A smart expense-sharing platform automating balance calculations with secure user management.",
-    github: "https://github.com/priyanka-mansuriya/dhansplit",
+    github: "https://github.com/priyanka28-05/dhansplit",
   },
   {
     id: "pdf-compressor",
@@ -174,7 +174,7 @@ export const PROJECTS_DATA = [
     year: "2024",
     tech: ["Spring Boot", "Next.js"],
     description: "High-performance document processing engine with optimized compression logic.",
-    github: "https://github.com/priyanka-mansuriya/pdf-compressor",
+    github: "https://github.com/priyanka28-05/pdf-compressor",
   },
   {
     id: "covid-report",
@@ -182,7 +182,7 @@ export const PROJECTS_DATA = [
     year: "2023",
     tech: ["JSP", "Java Servlets", "SQL"],
     description: "A system to generate professional, printable Covid reports based on real-time data.",
-    github: "https://github.com/priyanka-mansuriya/covid-report",
+    github: "https://github.com/priyanka28-05/covid-report",
   },
   {
     id: "random-chat",
@@ -190,7 +190,7 @@ export const PROJECTS_DATA = [
     year: "2023",
     tech: ["Spring Boot", "React.js", "WebSocket"],
     description: "Real-time chat application enabling users to connect instantly via WebSocket messaging.",
-    github: "https://github.com/priyanka-mansuriya/random-chat",
+    github: "https://github.com/priyanka28-05/random-chat",
   },
 ] as const
 
@@ -209,40 +209,94 @@ export const EDUCATION_DATA = [
   },
 ] as const
 
+// export const CERTIFICATIONS_DATA = [
+//   {
+//     id: "apigee-dev",
+//     title: "API Development on Google Cloud's Apigee",
+//     year: "2025",
+//     hasCredential: true,
+//     featured: true,
+//   },
+//   {
+//     id: "apigee-security",
+//     title: "API Security on Google Cloud's Apigee",
+//     year: "2025",
+//     hasCredential: true,
+//     featured: true,
+//   },
+//   {
+//     id: "api-design",
+//     title: "API Design and Fundamentals - Google",
+//     year: "2025",
+//     hasCredential: true,
+//     featured: false,
+//   },
+//   {
+//     id: "identity-protection",
+//     title: "Identity Protection and Governance",
+//     year: "2025",
+//     hasCredential: true,
+//     featured: false,
+//   },
+//   {
+//     id: "python-crash",
+//     title: "Crash Course on Python - Google",
+//     year: "2025",
+//     hasCredential: true,
+//     featured: false,
+//   },
+//   {
+//     id: "java-dev",
+//     title: "Java Development – Rajesh Patkar Institute",
+//     year: "2018",
+//     hasCredential: false,
+//     featured: false,
+//   },
+// ] as const
 export const CERTIFICATIONS_DATA = [
   {
     id: "apigee-dev",
     title: "API Development on Google Cloud's Apigee",
+    issuer: "Google Cloud",
     year: "2025",
     hasCredential: true,
+    credentialUrl: "https://coursera.org/share/c22644a799a001e99122c7b4821272c2",  // <-- Add your link
     featured: true,
   },
   {
     id: "apigee-security",
     title: "API Security on Google Cloud's Apigee",
+    issuer: "Google Cloud",
     year: "2025",
     hasCredential: true,
+    credentialUrl: "https://coursera.org/share/a04af4169273668f5ba82210c01c4ff6",  // <-- Add your link
     featured: true,
   },
   {
     id: "api-design",
     title: "API Design and Fundamentals - Google",
+    issuer: "Google Cloud",
     year: "2025",
     hasCredential: true,
+    credentialUrl: "https://coursera.org/share/8eab6908b5bb78c608313b3963c19b39",  // <-- Add your link
     featured: false,
   },
   {
     id: "identity-protection",
     title: "Identity Protection and Governance",
+    issuer: "Microsoft",
     year: "2025",
     hasCredential: true,
+    credentialUrl: "https://coursera.org/share/7bd2a3bc0482b13bd8175983a55f55a0",  // <-- Add your link
     featured: false,
   },
   {
     id: "python-crash",
     title: "Crash Course on Python - Google",
+    issuer: "Google Cloud",
     year: "2025",
     hasCredential: true,
+    credentialUrl: "https://coursera.org/share/a2a80217621d5c680a7b712a8e4b1651",  // <-- Add your link
     featured: false,
   },
   {
@@ -250,10 +304,10 @@ export const CERTIFICATIONS_DATA = [
     title: "Java Development – Rajesh Patkar Institute",
     year: "2018",
     hasCredential: false,
+    credentialUrl: "",
     featured: false,
   },
 ] as const
-
 export const LANGUAGES_DATA = ["English", "Hindi", "Gujarati", "Marathi"] as const
 
 export const INTERESTS_DATA = ["Travelling", "Music", "Board Games", "Cooking"] as const

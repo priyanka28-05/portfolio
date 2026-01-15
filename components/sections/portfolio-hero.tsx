@@ -7,7 +7,7 @@ import { PROFILE_INFO, PROFESSIONAL_SUMMARY, STATS_DATA } from "@/lib/constants/
 
 export function PortfolioHero() {
   return (
-    <section id="about" className="min-h-screen flex flex-col justify-center pt-20 pb-16 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex flex-col justify-center pt-20 pb-16 relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -99,7 +99,12 @@ export function PortfolioHero() {
               className="group border-2 hover:border-primary hover:bg-primary/5 bg-transparent"
               asChild
             >
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a
+                href="https://drive.google.com/file/d/1WMNTqn9GyVeQLiowFpr5KiqDciGrcB4s/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <Download className="h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </a>
@@ -110,13 +115,15 @@ export function PortfolioHero() {
             {[
               { href: PROFILE_INFO.github, icon: Github, label: "GitHub" },
               { href: PROFILE_INFO.linkedIn, icon: Linkedin, label: "LinkedIn" },
-              { href: `mailto:${PROFILE_INFO.email}`, icon: Mail, label: "Email" },
+              { href: `https://mail.google.com/mail/?view=cm&to=${PROFILE_INFO.email}&su=Hello%20from%20Portfolio&body=Hi%20Priyanka%2C%0D%0A%0D%0A`, icon: Mail, label: "Email" },
             ].map((social) => (
               <a
                 key={social.label}
                 href={social.href}
-                target={social.label !== "Email" ? "_blank" : undefined}
-                rel={social.label !== "Email" ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
+                // target={social.label !== "Email" ? "_blank" : undefined}
+                // rel={social.label !== "Email" ? "noopener noreferrer" : undefined}
                 className="group flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full hover:border-primary hover:bg-primary/5 transition-all"
                 aria-label={`${social.label} Profile`}
               >
