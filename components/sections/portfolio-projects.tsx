@@ -65,7 +65,7 @@ export function PortfolioProjects() {
         <div className="flex justify-center mt-12">
           <Button variant="outline" asChild>
             <a
-              href="https://github.com/priyanka-mansuriya"
+              href="https://github.com/priyanka28-05"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"

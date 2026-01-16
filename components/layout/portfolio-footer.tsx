@@ -93,7 +93,9 @@ export function PortfolioFooter() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href={`mailto:${PROFILE_INFO.email}`}
+              href={`https://mail.google.com/mail/?view=cm&to=${PROFILE_INFO.email}&su=Hello%20from%20Portfolio&body=Hi%20Priyanka%2C%0D%0A%0D%0A`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Send Email"
             >

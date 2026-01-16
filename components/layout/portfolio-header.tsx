@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button"
 export function PortfolioHeader() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("about")
+  const [activeSection, setActiveSection] = useState("hero")
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -159,7 +159,7 @@ export function PortfolioHeader() {
               asChild
               className="relative overflow-hidden group hover:border-primary transition-all duration-300 bg-transparent rounded-full px-5"
             >
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1WMNTqn9GyVeQLiowFpr5KiqDciGrcB4s/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <span className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-all duration-300" />
                 <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden">
                   <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
@@ -241,7 +241,7 @@ export function PortfolioHeader() {
                   className="w-full bg-transparent hover:bg-gradient-to-r hover:from-primary hover:to-accent hover:text-primary-foreground hover:border-transparent transition-all duration-300 rounded-xl"
                   asChild
                 >
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a href="https://drive.google.com/file/d/1WMNTqn9GyVeQLiowFpr5KiqDciGrcB4s/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                     Resume
                   </a>
                 </Button>

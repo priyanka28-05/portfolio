@@ -27,9 +27,16 @@ export function PortfolioCertifications() {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {featuredCerts.map((cert) => (
-              <div
+              // <div
+              //   key={cert.id}
+              //   className="bg-gradient-to-br from-primary/10 via-card to-card border-2 border-primary/30 rounded-lg p-6 hover:border-primary/60 transition-all hover:-translate-y-1"
+              // >
+              <a
                 key={cert.id}
-                className="bg-gradient-to-br from-primary/10 via-card to-card border-2 border-primary/30 rounded-lg p-6 hover:border-primary/60 transition-all hover:-translate-y-1"
+                href={cert.hasCredential && cert.credentialUrl ? cert.credentialUrl : undefined}
+                target={cert.hasCredential && cert.credentialUrl ? "_blank" : undefined}
+                rel={cert.hasCredential && cert.credentialUrl ? "noopener noreferrer" : undefined}
+                className="bg-gradient-to-br from-primary/10 via-card to-card border-2 border-primary/30 rounded-lg p-6 hover:border-primary/60 transition-all hover:-translate-y-1 block cursor-pointer"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
@@ -48,7 +55,7 @@ export function PortfolioCertifications() {
                     </Badge>
                   )}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -62,9 +69,16 @@ export function PortfolioCertifications() {
             </div>
             <div className="grid gap-4">
               {otherCerts.map((cert) => (
-                <div
+                // <div
+                //   key={cert.id}
+                //   className="bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-colors flex items-center justify-between"
+                // >
+                <a
                   key={cert.id}
-                  className="bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-colors flex items-center justify-between"
+                  href={cert.hasCredential && cert.credentialUrl ? cert.credentialUrl : undefined}
+                  target={cert.hasCredential && cert.credentialUrl ? "_blank" : undefined}
+                  rel={cert.hasCredential && cert.credentialUrl ? "noopener noreferrer" : undefined}
+                  className="bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-colors flex items-center justify-between cursor-pointer"
                 >
                   <div className="space-y-1">
                     <h4 className="font-medium text-sm">{cert.title}</h4>
@@ -76,7 +90,7 @@ export function PortfolioCertifications() {
                       Credential
                     </Badge>
                   )}
-                </div>
+                </a>
               ))}
             </div>
           </div>
